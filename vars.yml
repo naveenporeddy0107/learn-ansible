@@ -22,3 +22,12 @@
     - name: print url from file
       ansible.builtin.debug:
         msg: "{{ URL }}"
+
+- name: load variables from a file second play
+  hosts: all
+  vars_files:
+    - exvars.yml
+  tasks:
+    - name: print url from file
+      ansible.builtin.debug:
+        msg: "{{ URL }}"
