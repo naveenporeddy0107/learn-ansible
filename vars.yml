@@ -4,8 +4,13 @@
     URL: play.example.com
   tasks:
     - name: print url
-      vars:
-        URL1: tasks.example.com
       ansible.builtin.debug:
         msg: URL----- {{ URL }}
-        msg1: URL1-----{{ URL1 }}
+- name: Demo on task level variables
+  hosts: all
+  tasks:
+    - name: print task level variable
+      vars:
+        URL: Tasks.example.com
+      ansible.builtin.debug:
+        msg: URL----- {{ URL }}
