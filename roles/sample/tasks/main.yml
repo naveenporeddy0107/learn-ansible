@@ -3,4 +3,4 @@
     msg: Hello machas
 - name: Print variable from role
   ansible.builtin.debug:
-    msg: url-------->{{ url }}
+    msg: URL-------->{{ URL }}
