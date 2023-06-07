@@ -1,0 +1,3 @@
+- name: Printing from roles directory
+  hosts: all
+  roles: sample
