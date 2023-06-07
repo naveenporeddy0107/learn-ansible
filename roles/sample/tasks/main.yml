@@ -1,3 +1,5 @@
 - name: Print from roles
-  ansible.builtin.debug:
-    msg: Hello machas
+  tasks:
+    - name: test
+      ansible.builtin.debug:
+        msg: Hello Machas
