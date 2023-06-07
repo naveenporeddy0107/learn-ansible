@@ -31,3 +31,8 @@
     - name: print url from file
       ansible.builtin.debug:
         msg: "{{ URL }}"
+
+- name: Access variable from a role
+  hosts: all
+  roles:
+    - sample
